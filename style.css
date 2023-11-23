@@ -1,0 +1,143 @@
+@charset "utf-8";
+
+body{
+    color: #000000;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    
+}
+
+h1, h2{
+    font-weight: 800;
+    color: #000000;
+}
+
+.wrapper{
+    width: 100%;
+    margin: 0 auto;
+}
+
+main{
+    display: block;
+    background: rgb(255, 218, 7)
+}
+
+.container{
+    width: 100%;
+    max-width: 760px;
+    margin: 0 auto;
+    padding: 0 30px;
+    animation: surgir 5s ease-in-out;
+    animation-timeline: view();
+    animation-range:cover 0 cover 40% ;
+    background-image: url();
+    background-repeat: no-repeat;
+    
+}
+
+section.modulo p{
+    margin-bottom: 30px;
+    text-align: justify;
+    font-size: 1.3em;
+}
+
+section.modulo h2{
+    margin-bottom: 40px;
+    font-size: 30px;
+    text-transform: uppercase;
+    letter-spacing: 0.2em;
+    text-align: center;
+}
+
+section.modulo.container{
+    padding: 40px 0;
+    background: #ffffff;
+}
+
+section.modulo.parallax{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100vh !important;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+section.modulo.parallax h1{
+    color: #ffffff;
+    text-align: center;
+    font-size: 70px;
+    text-transform: uppercase;
+    text-shadow: 7px 7px 7px rgb(34, 34, 34);
+    z-index: 50%;
+}
+
+section.modulo.parallax::after{
+    content: "";
+    height: 100%;
+    width: 100%;
+    position: absolute;z-index: 8;
+    background: linear-gradient(to bottom, rgba(0,0,0,0)0, rgba(0,0,0,0) 40%, #000 100%);
+}
+
+
+section.modulo.parallax-1{
+    background-image: url(https://images.squarespace-cdn.com/content/v1/624055dc7c3bff00864d22b5/e9f45ab9-278d-4f3a-b868-fcef30653ec8/SafeSpace-Dia-da-Consciencia-Negra-Racismo-Estrutural-Discriminacao.jpg);
+}
+section.modulo.parallax-2{
+    background-image: url(https://i.glbimg.com/og/ig/infoglobo1/f/original/2021/11/18/zumbi-palmares.jpg);
+}
+section.modulo.parallax-3{
+    background-image: url(https://www.colegioweb.com.br/wp-content/uploads/2014/11/Dia-da-Consci%C3%AAncia-Negra.jpg);
+}
+@keyframes surgir {
+    from{
+translate: -100vw 0;
+color: rgb(255, 255, 255);
+opacity:1 ;
+
+    }
+    to{
+translate: 0 0;
+color: rgb(255, 255, 255)5, 255, 255;
+opacity: 1;
+    }
+}
+@media all and (max-width: 760px) {
+
+    section.modulo p{
+        margin-bottom: 10px;
+        text-align: center;
+        font-size: 1em;
+        padding: 5%;
+    }
+    
+    section.modulo.parallax h1{
+        color: #ffffff;
+        text-align: center;
+        font-size: 2em;
+        text-transform: uppercase;
+        text-shadow: 7px 7px 7px rgb(34, 34, 34);
+        z-index: 50%;
+    }
+    section.modulo.content{
+        width: 90%;
+    }
+    section.modulo.parallax-1{
+        background-image: url(https://images.pexels.com/photos/4915553/pexels-photo-4915553.jpeg?cs=srgb&dl=pexels-maria-orlova-4915553.jpg&fm=jpg);
+    }
+}
+@font-face {
+    font-family: titulo;
+    src: url(font/masque/MASQUE__.ttf);
+}
+h1{
+    font-family: titulo;
+}
